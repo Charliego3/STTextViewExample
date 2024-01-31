@@ -11,6 +11,8 @@
 		CBC9CE462B6A3106003C643F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBC9CE452B6A3106003C643F /* ViewController.swift */; };
 		CBC9CE482B6A3119003C643F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBC9CE472B6A3119003C643F /* Assets.xcassets */; };
 		CBC9CE4B2B6A3119003C643F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBC9CE492B6A3119003C643F /* Main.storyboard */; };
+		CBC9CE542B6A3185003C643F /* STCompletion in Frameworks */ = {isa = PBXBuildFile; productRef = CBC9CE532B6A3185003C643F /* STCompletion */; };
+		CBC9CE562B6A3185003C643F /* STTextView in Frameworks */ = {isa = PBXBuildFile; productRef = CBC9CE552B6A3185003C643F /* STTextView */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBC9CE542B6A3185003C643F /* STCompletion in Frameworks */,
+				CBC9CE562B6A3185003C643F /* STTextView in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +81,10 @@
 			dependencies = (
 			);
 			name = STTextViewExample;
+			packageProductDependencies = (
+				CBC9CE532B6A3185003C643F /* STCompletion */,
+				CBC9CE552B6A3185003C643F /* STTextView */,
+			);
 			productName = STTextViewExample;
 			productReference = CBC9CE402B6A3106003C643F /* STTextViewExample.app */;
 			productType = "com.apple.product-type.application";
@@ -105,6 +113,9 @@
 				Base,
 			);
 			mainGroup = CBC9CE372B6A3106003C643F;
+			packageReferences = (
+				CBC9CE522B6A3185003C643F /* XCRemoteSwiftPackageReference "STTextView" */,
+			);
 			productRefGroup = CBC9CE412B6A3106003C643F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -274,12 +285,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = STTextViewExample/STTextViewExample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85VDLK2255;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -301,12 +314,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = STTextViewExample/STTextViewExample.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 85VDLK2255;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
@@ -344,6 +359,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CBC9CE522B6A3185003C643F /* XCRemoteSwiftPackageReference "STTextView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzyzanowskim/STTextView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.25;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CBC9CE532B6A3185003C643F /* STCompletion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBC9CE522B6A3185003C643F /* XCRemoteSwiftPackageReference "STTextView" */;
+			productName = STCompletion;
+		};
+		CBC9CE552B6A3185003C643F /* STTextView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CBC9CE522B6A3185003C643F /* XCRemoteSwiftPackageReference "STTextView" */;
+			productName = STTextView;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CBC9CE382B6A3106003C643F /* Project object */;
 }

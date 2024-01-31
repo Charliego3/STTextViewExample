@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "sttextkitplus",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/STTextKitPlus",
+      "state" : {
+        "revision" : "5500fa8811ed339605b0861ae0390677863a7bfe",
+        "version" : "0.0.2"
+      }
+    },
+    {
+      "identity" : "sttextview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/krzyzanowskim/STTextView.git",
+      "state" : {
+        "revision" : "44a35913fb509348a6e92a22f9422f3189ae4106",
+        "version" : "0.8.25"
+      }
+    }
+  ],
+  "version" : 2
+}
